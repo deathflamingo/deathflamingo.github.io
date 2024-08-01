@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impacket Command Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <button onclick="loadTool('getnpusers')">ASREPROAST</button>
+            <button onclick="loadTool('getuserspns')">KERBEROAST</button>
+            <button onclick="loadTool('silver')">SILVER TICKET</button>
+            <button onclick="loadTool('golden')">GOLDEN TICKET</button>
+            <button onclick="loadTool('constrained')">CONSTRAINED DELEGATION</button>
+            <!-- Add more buttons as needed -->
+        </div>
+        <div class="content">
+            <h1>Impacket Command Generator</h1>
+            <div id="toolForm"></div>
+        </div>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
