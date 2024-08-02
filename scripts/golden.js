@@ -79,6 +79,6 @@ function generateCommand(container) {
     const spn = formData.get('spn');
     const user = formData.get('user');
 
-    let command = `python3 ticketer.py --${option} ${hash} -domain-sid ${domainsid} -domain ${domain} ${user}`;
+    let command = `python3 ticketer.py -${option} ${hash} -domain-sid ${domainsid} -domain ${domain} ${user}`;
     return command;
 }
